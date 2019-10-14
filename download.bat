@@ -1,5 +1,6 @@
 @echo off 
 setlocal enabledelayedexpansion
+@setx Path "%cd%"
 ::新建下载目录
 md D:\tmp
 ::定义外部链接
