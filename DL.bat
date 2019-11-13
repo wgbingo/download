@@ -1,7 +1,7 @@
 @echo off 
 setlocal enabledelayedexpansion
 ::新建下载目录
-md D:\tmp
+md D:\tmp>nul 2>nul
 ::定义外部链接
 :Start
 ping www.baidu.com>nul&&goto download||echo 正在等待网络连接。。。。&for /l %%a in (3,-1,0) do ping -n 2 127.1>nul&cls&goto Start
