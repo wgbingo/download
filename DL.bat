@@ -1,14 +1,14 @@
 @echo off 
 setlocal enabledelayedexpansion
-::ÐÂ½¨ÏÂÔØÄ¿Â¼
+::æ–°å»ºä¸‹è½½ç›®å½•
 md D:\tmp
-::¶¨ÒåÍâ²¿Á´½Ó
+::å®šä¹‰å¤–éƒ¨é“¾æŽ¥
 :Start
-ping www.baidu.com>nul&&goto download||echo ÕýÔÚµÈ´ýÍøÂçÁ¬½Ó¡£¡£¡£¡£&for /l %%a in (3,-1,0) do ping -n 2 127.1>nul&cls&goto Start
-::ÏÂÔØÎÄ¼þµ½Ä¿Â¼
+ping www.baidu.com>nul&&goto download||echo æ­£åœ¨ç­‰å¾…ç½‘ç»œè¿žæŽ¥ã€‚ã€‚ã€‚ã€‚&for /l %%a in (3,-1,0) do ping -n 2 127.1>nul&cls&goto Start
+::ä¸‹è½½æ–‡ä»¶åˆ°ç›®å½•
 :download
 wget -t 3 -c --limit-rate=6114k -w 3 -T 3 -P D:\tmp/ https://hugeota.d.miui.com/9.9.26/miui_CEPHEUS_9.9.26_82167abb35_10.0.zip
-::É¾³ýÄ¿Â¼ÏÂÎÄ¼þ
+::åˆ é™¤ç›®å½•ä¸‹æ–‡ä»¶
 cd /d "D:\tmp" 
 del /s /q /f *.*
 cls
